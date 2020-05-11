@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
 	<name>itellacod</name>
-	<displayName><![CDATA[Itella Cash on delivery (COD)]]></displayName>
-	<version><![CDATA[1.0.0]]></version>
-	<description><![CDATA[Accept cash on delivery payments]]></description>
+	<displayName><![CDATA[Itella Card on Delivery (COD)]]></displayName>
+	<version><![CDATA[1.0.1]]></version>
+	<description><![CDATA[Accept card on delivery payments]]></description>
 	<author><![CDATA[Mijora]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>
 	<is_configurable>1</is_configurable>

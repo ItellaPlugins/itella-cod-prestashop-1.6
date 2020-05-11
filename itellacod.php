@@ -10,7 +10,7 @@ class ItellaCod extends PaymentModule
 	{
 		$this->name = 'itellacod';
 		$this->tab = 'payments_gateways';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 		$this->author = 'Mijora';
 		$this->need_instance = 1;
 		$this->controllers = array('validation');
@@ -21,8 +21,8 @@ class ItellaCod extends PaymentModule
 
 		parent::__construct();
 
-		$this->displayName = $this->l('Itella Cash on delivery (COD)');
-		$this->description = $this->l('Accept cash on delivery payments');
+		$this->displayName = $this->l('Itella Card on Delivery (COD)');
+		$this->description = $this->l('Accept card on delivery payments');
 	}
 
 	public function install()
@@ -314,7 +314,7 @@ class ItellaCod extends PaymentModule
 			return false;
 
 		return array(
-			'cta_text' => $this->l('Pay with cash on delivery (COD)'),
+			'cta_text' => $this->l('Pay with card on delivery (COD)'),
 			'logo' => Media::getMediaPath(dirname(__FILE__) . '/itella.jpg'),
 			'action' => $this->context->link->getModuleLink($this->name, 'validation', array('confirm' => true), true)
 		);
