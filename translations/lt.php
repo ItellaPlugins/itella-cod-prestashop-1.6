@@ -37,5 +37,5 @@ $_MODULE['<{itellacod}prestashop>confirmation_0db71da7150c27142eef9d22b843b4a9']
 $_MODULE['<{itellacod}prestashop>confirmation_64430ad2835be8ad60c59e7d44e4b0b1'] = 'klientų aptarnavimą';
 $_MODULE['<{itellacod}prestashop>payment_e3ffbecbc29ae832d64a88926921f7fc'] = 'Apmokėti kortele pristatymo metu (COD)';
 $_MODULE['<{itellacod}prestashop>payment_d496fe292405ff53fbcf49386fc269f4'] = 'COD mokestis ';
-$_MODULE['<{itellacod}prestashop>payment_0c9778c2abf1ab2b306ac9ee24122b02'] = 'Patvirtinus užsakymą COD mokestis bus pridėtas prie p[ristatymo mokesčio';
+$_MODULE['<{itellacod}prestashop>payment_0c9778c2abf1ab2b306ac9ee24122b02'] = 'Patvirtinus užsakymą COD mokestis bus pridėtas prie pristatymo mokesčio';
 $_MODULE['<{itellacod}prestashop>payment_536dc7424180872c8c2488ae0286fb53'] = 'Už prekes atsiskaitysite pristatymo metu';

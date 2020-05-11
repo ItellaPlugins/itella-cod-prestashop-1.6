@@ -10,7 +10,7 @@ class ItellaCod extends PaymentModule
 	{
 		$this->name = 'itellacod';
 		$this->tab = 'payments_gateways';
-		$this->version = '1.0.1';
+		$this->version = '1.0.2';
 		$this->author = 'Mijora';
 		$this->need_instance = 1;
 		$this->controllers = array('validation');
