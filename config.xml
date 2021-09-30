@@ -2,7 +2,7 @@
 <module>
 	<name>itellacod</name>
 	<displayName><![CDATA[Itella Card on Delivery (COD)]]></displayName>
-	<version><![CDATA[1.0.1]]></version>
+	<version><![CDATA[1.0.3]]></version>
 	<description><![CDATA[Accept card on delivery payments]]></description>
 	<author><![CDATA[Mijora]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>
