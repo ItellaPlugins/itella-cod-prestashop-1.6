@@ -78,15 +78,6 @@ class ItellaCod extends PaymentModule
 		$defaultLang = (int) Configuration::get('PS_LANG_DEFAULT');
 
 		$carriers = Carrier::getCarriers($defaultLang, false, false, false, null, 0); //array();
-		$itella_pp_ref = (int) Configuration::get('ITELLA_PICKUP_POINT_ID_REFERENCE');
-
-		// remove itella pickup point as cod is not available for it
-		foreach ($carriers as $key => $mod) {
-			if ($mod['id_reference'] == $itella_pp_ref) {
-				unset($carriers[$key]);
-				break;
-			}
-		}
 
 		// Init Fields form array
 		$fieldsForm[0]['form'] = [
@@ -283,13 +274,6 @@ class ItellaCod extends PaymentModule
 	public function isCarrierAllowed($id_carrier)
 	{
 		$carrier = new Carrier((int) $id_carrier);
-
-		$itella_pp_ref = (int) Configuration::get('ITELLA_PICKUP_POINT_ID_REFERENCE');
-
-		// ignore itella pickup points
-		if ($itella_pp_ref && $itella_pp_ref == $carrier->id_reference) {
-			return false;
-		}
 
 		$enabled_carriers = explode(',', Configuration::get($this->_prefix . 'CARRIERS'));
 
